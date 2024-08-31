@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "simple-login-system"
+version = "0.1.0"
+description = "This is a simple login system made using python."
+authors = ["IBK <ibukunoluwa.adetoba@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+black = "^24.8.0"
+pylint = "^3.2.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+
+[tool.pylint.MASTER]
+disable = ["C0114", "C0301"]
+
+[tool.black]
+line-length = 120
